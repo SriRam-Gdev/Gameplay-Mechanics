@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float forwardInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxis("Horizontal");
         playerRb.AddForce(Vector3.forward * MoveSpeed * forwardInput);
+        playerRb.AddForce(Vector3.right * MoveSpeed * horizontalInput);
     }
 }
