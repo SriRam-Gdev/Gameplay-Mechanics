@@ -1,0 +1,4 @@
+repository "Gameplay Mechanics 2025-08-19_10-44-23/Gameplay Mechanics@13469589310862@cloud"
+  path "/"
+    br "/main"
+    co "/main"
