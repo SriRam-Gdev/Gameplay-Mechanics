@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 64601247}
   - component: {fileID: 64601246}
   - component: {fileID: 64601245}
+  - component: {fileID: 64601250}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -258,6 +259,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64601250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64601244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201aa599652f74c4a9e1984b3dc34796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1 &124469735
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ad66d0f1023e14ba3861581f4ff736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateSphere
+  rotationSpeed: 50
 --- !u!1001 &245963551
 PrefabInstance:
   m_ObjectHideFlags: 0
