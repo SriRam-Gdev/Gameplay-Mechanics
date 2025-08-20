@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class RotateSphere : MonoBehaviour
 {
 
-    public float rotationSpeed = 50;
+    public float rotationSpeed ;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
