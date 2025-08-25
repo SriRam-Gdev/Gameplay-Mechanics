@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyFollow : MonoBehaviour
 {
@@ -16,7 +18,8 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyRb.AddForce((player.transform.position - transform.position).normalized * followSpeed);
+        Vector3 LookDirection = (player.transform.position - transform.position).normalized;
+        enemyRb.AddForce(LookDirection * followSpeed);
     }
 
 }

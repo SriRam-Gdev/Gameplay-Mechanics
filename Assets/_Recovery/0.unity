@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718b2b63543890848aa02c29d7c84aaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
-  followSpeed: 3
+  followSpeed: 1
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
