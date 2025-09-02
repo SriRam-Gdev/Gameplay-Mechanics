@@ -166,7 +166,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &64601246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   MoveSpeed: 5
+  HasPowerUp: 0
 --- !u!1 &124469735
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ad66d0f1023e14ba3861581f4ff736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateSphere
-  rotationSpeed: 40
+  rotationSpeed: 20
 --- !u!1001 &245963551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -825,7 +826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788045180092717185, guid: 1457dd9523170274cb1f242d697be632, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1788045180092717185, guid: 1457dd9523170274cb1f242d697be632, type: 3}
       propertyPath: m_LocalPosition.y
@@ -833,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788045180092717185, guid: 1457dd9523170274cb1f242d697be632, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6.94
       objectReference: {fileID: 0}
     - target: {fileID: 1788045180092717185, guid: 1457dd9523170274cb1f242d697be632, type: 3}
       propertyPath: m_LocalRotation.w

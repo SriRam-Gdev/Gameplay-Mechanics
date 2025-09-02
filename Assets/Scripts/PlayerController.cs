@@ -3,8 +3,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
-    public float MoveSpeed = 5.0f;
+    public float MoveSpeed ;
     private GameObject focalPoint;
+    public bool HasPowerUp = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,5 +21,14 @@ public class PlayerController : MonoBehaviour
 
         playerRb.AddForce(focalPoint.transform.forward * MoveSpeed * forwardInput);
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerups"))
+        {
+            HasPowerUp = true;
+            Destroy(other.gameObject);
+        }
     }
 }
